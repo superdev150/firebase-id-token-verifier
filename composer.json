@@ -1,0 +1,26 @@
+{
+    "name": "superdev150/firebase-id-token-verifier",
+    "description": "Verify Firebase Auth ID tokens on a PHP backend without the Admin SDK, and gate admin routes on verified email + sign-in provider.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["firebase", "jwt", "auth", "id-token", "rs256", "middleware"],
+    "require": {
+        "php": ">=8.2",
+        "firebase/php-jwt": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": { "Showcase\\FirebaseAuth\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Showcase\\FirebaseAuth\\Tests\\": "tests/" }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
